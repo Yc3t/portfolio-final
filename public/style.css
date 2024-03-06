@@ -13,6 +13,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Hack Nerd Font Mono', sans-serif;
+    font-size: large;
 }
 .projects-title {
     text-align: center; /* Center the text */
@@ -285,6 +286,39 @@ nav {
   .notification.show {
     opacity: 1;
   }
+  #blog-entry {
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  #blog-entry p {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  #blog-entry h1, #blog-entry h2, #blog-entry h3, #blog-entry h4, #blog-entry h5, #blog-entry h6 {
+    text-align: left;
+  }
+
+  #blog-entry h2 {
+    color: #9a449a;
+  }
+  #blog-entry h1 {
+    color: #7b5cac;
+  }
+
+  
+  #blog-entry img {
+    display: block;
+    text-align: left;
+
+  }
+  #blog-entry pre[class*="language-"] {
+    display: inline-block;
+    text-align: left;
+  }
+    
 
   @media screen and (max-width: 768px) {
     .projects-title {
