@@ -24,6 +24,10 @@ body {
     font-size: 2rem;
     font-family: 'Hack Nerd Font Mono Bold', sans-serif;
 }
+.logo,a {
+  color: white; /* Color of the links when they are not active */
+  text-decoration: none; /* Remove the underline */
+}
 
 .logo {
     position: relative;
@@ -85,6 +89,8 @@ nav {
     align-items: center;
     height: 5rem; /* Set the height of the navbar */
     padding: 0 20px;
+    color: white; /* Color of the links when they are not active */
+    text-decoration: none; /* Remove the underline */
 }
 .nav-links a {
     color: white; /* Color of the links when they are not active */
@@ -320,6 +326,11 @@ nav {
           .logo svg {
             margin-right: 10px;
           }
+          .logo,a {
+            color: white; /* Color of the links when they are not active */
+            text-decoration: none; /* Remove the underline */
+          }
+          
         
           .logo .dev {
             padding: 0;
@@ -358,10 +369,7 @@ nav {
       margin-top: -2rem;
     }
   
-    #desktop-nav {
-      height: auto;
-      padding: 10px;
-    }
+
   
     .container {
       margin-top: 10rem;
