@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'Hack Nerd Font Mono';
+    src: url('fonts/HackNerdFontMono.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Hack Nerd Font Mono Bold';
+    src: url('fonts/HackNerdFontMono-Bold.ttf') format('truetype');
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Hack Nerd Font Mono', sans-serif;
+}
+.projects-title {
+    text-align: center; /* Center the text */
+    margin-top: 0.5rem; /* Add some space at the top */
+    font-size: 5rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: 'Hack Nerd Font Mono Bold', sans-serif;
+}
+
+.logo {
+    position: relative;
+    left: 0; /* Position the logo at the left end of the nav */
+    margin-left: 1rem;
+}
+
+.terminal-icon-container {
+    position: absolute;
+    right: 0; /* Position the terminal icon at the right end of the nav */
+    margin-right: 1.5rem;
+}
+
+
+.logo .dev {
+    padding: 3rem; /* adds space around .dev */
+}
+
+.logo svg {
+    margin-left: 10px; /* adds space to the right of the SVG */
+}
+.line {
+    display: block;
+    width:0.19vw; /* Adjust as needed */
+    height: 1; /* Adjust as needed */
+    position: absolute;
+    top: 100%; /* Position it right below the logo */
+    left: 3.4rem;
+    margin-top: -3.2rem;
+}
+
+/*Desktop nav*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    margin-top: -3rem;
+    font-family: 'Hack Nerd Font Mono Bold', sans-serif;
+}
+#desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem; /* Set the height of the navbar */
+    padding: 0 20px;
+}
+.nav-links a {
+    color: white; /* Color of the links when they are not active */
+    text-decoration: none; /* Remove the underline */
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50rem;
+  }
+  
+  .box {
+    width: 17vw;
+    height: 30vh;
+    margin: 10px;
+    background-color: #26262d;
+    border: 1px solid #26262d;
+    border-radius: 7%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+
+}
+
+.box img {
+    border-radius: 7%;
+    width: 100%; /* Set the width to 100% of the box */
+    height: 70%; /* Set the height to 50% of the box */
+    object-fit: cover; /* Resize the image to cover the area while maintaining its aspect ratio */
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    margin-top: 0;
+    font-size: 18px;
+    margin-left: 1rem;
+
+}
+
+.box p {
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+
+}
+  .verilog {
+    color: #A83BDC !important;
+  }
+  
+  .python {
+    color: #3D4EA4 !important;
+
+  }
+  
+  .cpp {
+    color: #9FC9E0 !important;
+  }
+  .asm {
+    color: #9BD7A1 !important;
+  }
+  .cs {
+    color: #E152CA !important;
+  }
+
+ .unity {
+    color: #FFCB44 !important;
+  }
+
+ .rust {
+    color: #DD6A6A !important;
+  }
+  #desktop-nav {
+    position: relative; /* Make the nav a positioning context for its children */
+}
+
+.social-icons {
+    position: fixed; /* Make the position of the div fixed */
+    bottom: 0rem; /* Position the div at the bottom of the page */
+    right: 2rem; /* Position the div at the right of the page */
+    display: flex; /* Make the div a flex container */
+    flex-direction: column; /* Arrange the icons in a row */
+    gap: 10px; /* Add a gap between the icons */
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px; /* Set a specific width to the icons */
+}
+
+.blog {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Hack Nerd Font Mono', sans-serif;
+  }
+  
+  #blog-entries {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #blog-entries li {
+    margin-bottom: 20px;
+  }
+  
+  #blog-entries a {
+    display: block;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #blog-entries a:hover {
+    background-color: #555;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+  }
+
+  .contact-header {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .email-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .email {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .copy-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .arrow {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+
+  .cv-download-container {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .cv-download {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cv-download:hover {
+    background-color: #555;
+  }
+
+  .notification {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: #555;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .notification.show {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    .projects-title {
+      font-size: 3rem;
+    }
+  
+    .logo {
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+    }
+  
+    .terminal-icon-container {
+      margin-right: 0.5rem;
+    }
+  
+    .logo .dev {
+      padding: 1rem;
+    }
+  
+    .line {
+      left: 2rem;
+      margin-top: -2rem;
+    }
+  
+    @media screen and (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          height: auto;
+          padding: 10px;
+        }
+      
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 0;
+            margin-bottom: 1rem;
+          }
+        
+          .logo svg {
+            margin-right: 10px;
+          }
+        
+          .logo .dev {
+            padding: 0;
+          }
+      
+        .terminal-icon-container {
+          position: static;
+          margin-right: 0;
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+      
+        .nav-container {
+          position: static;
+          transform: none;
+          font-size: 1.5rem;
+          margin-top: 0;
+          text-align: center;
+        }
+      
+        .nav-links {
+          flex-direction: column;
+          height: auto;
+          gap: 10px;
+        }
+      
+        #desktop-nav {
+          flex-direction: column;
+          height: auto;
+          padding: 10px;
+        }
+      }
+  
+    .nav-container {
+      font-size: 1.5rem;
+      margin-top: -2rem;
+    }
+  
+    #desktop-nav {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .container {
+      margin-top: 10rem;
+    }
+  
+    .box {
+      width: 90%;
+      height: auto;
+      margin: 10px auto;
+    }
+  
+    .box h2 {
+      font-size: 16px;
+    }
+  
+    .social-icons {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 2rem;
+      }
+    
+      .social-icons img {
+        width: 24px;
+        height: 24px;
+      }
+    
+      .social-icons img[src*="bar.svg"] {
+        display: none;
+      }
+  
+    .blog {
+      padding: 10px;
+    }
+  
+    .contact-header {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .email {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  
+    .copy-icon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .arrow {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+  
+    .cv-download-container {
+      bottom: 1rem;
+      left: 1rem;
+    }
+  
+    .cv-download {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .notification {
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem;
+    }
+  }
+  

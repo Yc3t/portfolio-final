@@ -1,0 +1,14 @@
+{
+  
+  "main": "src/index.html",
+  "scripts": {
+    "generate-blog": "node ./src/generate-blog.entries.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "dependencies": {
+    "markdown-it": "^14.0.0",
+    "markdown-it-prism": "^2.3.0",
+    "prismjs": "^1.29.0"
+  }
+}

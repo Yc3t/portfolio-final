@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="11" fill="white"/>
+          </svg>
+          ycet.<br><span class="dev">dev</span>
+        </div>
+<!--        <div class="terminal-icon-container">  
+          <img src="../public/svg/terminal.svg" alt="Terminal" id="terminal-icon">
+        </div> -->
+        <div>
+          <div class="nav-container">
+            <ul class="nav-links">
+              <li><a href="index.html">home</a></li>
+              <li><a href="blog.html">blog</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <div class="contact-container">
+    <h1 class="contact-header">CONTACT ME!</h1>
+    <div class="email-container">
+      <span class="arrow">→</span>
+      <span class="email">your-email@example.com</span>
+      <img src="../public/svg/copy.svg" alt="Copy" class="copy-icon" onclick="copyEmail()">
+    </div>
+  </div>
+
+  <div class="cv-download-container">
+    <a href="../public/cv.pdf" download class="cv-download">Download CV</a>
+  </div>
+  <div class="social-icons">
+    <img src="../public/svg/github.svg" alt="Facebook">
+    <img src="../public/svg/insta.svg" alt="Twitter">
+    <img src="../public/svg/x.svg" alt="LinkedIn">
+    <img style="height: 7rem;" src="../public/svg/bar.svg" alt="Vertical Bar">
+</div>
+</div>
+  <div class="notification" id="notification">Email copied to clipboard!</div>
+
+  <script>
+    function copyEmail() {
+      const email = 'notyet@gmail.com';
+      navigator.clipboard.writeText(email);
+      showNotification();
+    }
+
+    function showNotification() {
+      const notification = document.getElementById('notification');
+      notification.classList.add('show');
+      setTimeout(() => {
+        notification.classList.remove('show');
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
+
