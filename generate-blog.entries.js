@@ -57,9 +57,9 @@ fs.readdir(mdDirectory, (err, files) => {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Entry</title>
-  <script src="public/prism.js"></script>
-  <link rel="stylesheet" href="public/prism-twilight.css">
-  <link rel="stylesheet" href="public/style.css">
+  <script src="../public/prism.js"></script>
+  <link rel="stylesheet" href=".../public/prism-twilight.css">
+  <link rel="stylesheet" href="../public/style.css">
 </head>
 <body>
   <nav id="desktop-nav">
