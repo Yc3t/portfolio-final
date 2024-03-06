@@ -39,7 +39,7 @@ fs.readdir(mdDirectory, (err, files) => {
         // Replace image syntax with HTML <img> tags
         const updatedMdContent = mdContent.replace(/!\[\[(.*?)\|(\d+)\]\]/g, (match, imageName, size) => {
           const imagePath = path.join(imageDirectory, imageName);
-          return `<img src="${imagePath}" alt="${imageName}" width="${size}%">`;
+          return `<img src="${imagePath}" alt="${imageName}" width="${size}px">`;
         });
 
         const md = new MarkdownIt({
@@ -76,8 +76,8 @@ fs.readdir(mdDirectory, (err, files) => {
       <div class="nav-container">
         <ul class="nav-links">
           <li><a href="../index.html">home</a></li>
-          <li><a href="../src/blog.html">blog</a></li>
-          <li><a href="../src/contact">contact</a></li>
+          <li><a href="../blog.html">blog</a></li>
+          <li><a href="../contact.html">contact</a></li>
         </ul>
       </div>
     </div>
