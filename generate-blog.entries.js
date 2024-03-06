@@ -85,7 +85,7 @@ fs.readdir(mdDirectory, (err, files) => {
   <main>
     <div id="blog-entry">${htmlContent}</div>
   </main>
-  <script src="public/prism-autoloader.min.js"></script>
+  <script src="../public/prism-autoloader.min.js"></script>
 </body>
 </html>
 `;
