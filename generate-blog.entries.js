@@ -73,9 +73,9 @@ fs.readdir(mdDirectory, (err, files) => {
     <div>
       <div class="nav-container">
         <ul class="nav-links">
-          <li><a href="/src/index.html">home</a></li>
-          <li><a href="/srcblog.html">blog</a></li>
-          <li><a href="/src/contact">contact</a></li>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="../srcblog.html">blog</a></li>
+          <li><a href="../src/contact">contact</a></li>
         </ul>
       </div>
     </div>
