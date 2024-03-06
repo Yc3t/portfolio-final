@@ -5,7 +5,7 @@ const markdownItPrism = require('markdown-it-prism');
 
 const mdDirectory = 'public/md/';
 const outputDirectory = 'blog-entries/';
-const imageDirectory = 'public/md_images/';
+const imageDirectory = '../public/md_images/';
 
 // Copy Prism.js files to the public directory
 const prismFiles = [
