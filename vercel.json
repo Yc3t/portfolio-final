@@ -1,5 +1,15 @@
 {
-  "static": {
-    "directory": "src/public"
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "/src/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*).html",
+      "dest": "/src/$1.html"
+    }
+  ]
 }
