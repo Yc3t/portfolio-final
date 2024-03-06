@@ -1,8 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/public/(.*)",
-      "destination": "/src/public/$1"
-    }
-  ]
+  "static": {
+    "directory": "src/public"
+  }
 }
