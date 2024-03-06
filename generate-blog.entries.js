@@ -58,7 +58,7 @@ fs.readdir(mdDirectory, (err, files) => {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Entry</title>
   <script src="../public/prism.js"></script>
-  <link rel="stylesheet" href=".../public/prism-twilight.css">
+  <link rel="stylesheet" href="../public/prism-twilight.css">
   <link rel="stylesheet" href="../public/style.css">
 </head>
 <body>
@@ -76,7 +76,7 @@ fs.readdir(mdDirectory, (err, files) => {
       <div class="nav-container">
         <ul class="nav-links">
           <li><a href="../index.html">home</a></li>
-          <li><a href="../srcblog.html">blog</a></li>
+          <li><a href="../src/blog.html">blog</a></li>
           <li><a href="../src/contact">contact</a></li>
         </ul>
       </div>
