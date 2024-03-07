@@ -101,9 +101,12 @@ nav {
   text-decoration: none; /* Remove the underline */
 }
 .nav-links a {
-  color: white; /* Color of the links when they are not active */
-  text-decoration: none; /* Remove the underline */
+  color: white;
+  text-decoration: none;
 }
+
+
+
 
 .container {
   display: flex;
